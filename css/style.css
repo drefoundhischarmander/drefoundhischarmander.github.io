@@ -1,0 +1,230 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+body {
+  background-color: #F6F1EB;
+}
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.sidenav-trigger {
+  color: #26a69a;
+}
+
+.corinthia-regular {
+  font-family: "Corinthia", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.corinthia-bold {
+  font-family: "Corinthia", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.baskervville-regular {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.baskervville-regular-italic {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.shadow { 
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.cover-title {
+  font-size:10.2rem;
+  line-height: 70%;
+}
+
+.cover-title-small {
+  font-size:5rem;
+  position: absolute;
+}
+
+.mobile-title {
+  display: none;
+}
+
+.mobile-title h1 {
+  font-size:9rem;
+  line-height: .7em;
+}
+
+.mobile-title h2 {
+  line-height: 0px;
+}
+
+.date {
+  font-size: 25px; /* Adjust as needed */
+  letter-spacing: 0.20em; /* Adjust spacing between characters */
+}
+
+.date span {
+  padding: 0 0.2em; /* Space around each element */
+}
+
+.mt-100 {
+  margin-top:100px;
+}
+
+.mt-50 {
+  margin-top:50px;
+}
+
+.mt-20 {
+  margin-top:20px;
+}
+
+.hashtag { 
+  padding-bottom:2em;
+}
+.hashtag-mobile { 
+  padding-bottom:1em;
+}
+
+.parallax-container {
+  min-height: 100vh;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+  background-color: rgba(89,35,48, 0.4);
+}
+
+.parallax-container .parallax img {
+  bottom:-10%
+}
+
+.parallax-container .section {
+    width: 100%;
+}
+
+.modal.bottom-sheet { 
+  max-height:70%;
+}
+
+.details h3 {
+  color: #B0473E;
+}
+
+.footer-bg {
+  background-color: #800001;
+}
+
+.color-circle {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  border-radius: 50%;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.schedule {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  max-width: 600px;
+  margin: auto;
+  text-align: left;
+  position: relative;
+}
+
+.sch_left {
+  border-right: 1px solid #B0473E;
+}
+
+.sch_right {
+  padding: 0 0 0 20px;
+  margin-bottom: 25px;
+}
+
+.sch_time:before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #B0473E;
+  position: absolute;
+  border: 2px solid #fff;
+  margin-left: -26px;
+  margin-top: 5px;
+
+}
+
+.gallery .row {
+  padding:0px;
+  margin:0px;
+  margin-bottom:-10px;
+}
+
+.gallery .row .col {
+  padding:0;
+  margin-bottom:-10px;
+}
+
+.gallery img {
+  width: 100%;
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+  .cover-title {
+    display: none;;
+  }
+  .hashtag { 
+    display:none;
+  }
+  .mobile-title {
+    display: block;
+  }
+  .hashtag-mobile {
+    display: block;
+  }
+  .parallax-container .parallax img {
+    left: 60%;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
