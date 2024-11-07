@@ -89,9 +89,9 @@
             <p class="light">
               Need help? or info?
               <br/>
-              Andre - <a href="tel:091234567890">091234567890</a>
+              Andre - <a href="tel:09565943214">09565943214</a>
               <br/>
-              Cha - <a href="tel:091234567890">091234567890</a>
+              Cha - <a href="tel:09065177473">09065177473</a>
             </p>
           </div>
 
@@ -181,7 +181,7 @@
           </div>
           <div class="icon-block">
             <h3 class="center corinthia-regular ">In Lieu of Gifts</h3>
-            <p class="light">With all that we have, we've been truly blessed. Your presence and prayers are all that we request. If you desire to give nonetheless, monetary gift is the one we suggest.</p>
+            <p class="light">To save you from shopping, sit back and rest. As your presence and prayers are all that we request. If you desire to give nonetheless to help us on our way, a gift of cash towards our home would really make our day. A money envelope with our Account's QR code can be found on your table. However, if you'll prefer a gift, please feel free to surprise us in your own special way.Don't go overboard or rob any banks! Any little thing will make us smile with thanks.</p>
           </div>
         </div>
       </div>
@@ -288,7 +288,11 @@
                 dataType: 'xml',
                 statusCode: {
                     0:function() {
-                        M.toast({html: "We are overjoyed that you will be joining us on our special day! Your presence means the world to us and we can't wait to celebrate our wedding with you. Thank you for taking the time to RSVP and for sharing in our happiness. We look forward to creating unforgettable memories with you on our wedding day.", classes: 'green'});
+                        M.toast({
+                          html: "We are overjoyed that you will be joining us on our special day! Your presence means the world to us and we can't wait to celebrate our wedding with you. Thank you for taking the time to RSVP and for sharing in our happiness. We look forward to creating unforgettable memories with you on our wedding day.", 
+                          classes: 'green',
+                          displayLength: 6000,
+                        });
                         $("#pre-loader").hide()
                         $('#content').removeClass('less-opacity');
                         $('#name').val("");
@@ -297,7 +301,7 @@
                         $('#cancel')[0].click()
                     },
                     200:function() {
-                        M.toast({html: "Oops! Something went wrong. Please try again", classes: 'red'});
+                        M.toast({html: "Oops! Something went wrong. Please try again", classes: 'red', displayLength: 6000,});
                         $("#pre-loader").hide()
                         $('#content').removeClass('less-opacity');
                     }
@@ -328,7 +332,7 @@
                 dataType: 'xml',
                 statusCode: {
                     0:function() {
-                        M.toast({html: "We are overjoyed that you will be joining us on our special day! Your presence means the world to us and we can't wait to celebrate our wedding with you. Thank you for taking the time to RSVP and for sharing in our happiness. We look forward to creating unforgettable memories with you on our wedding day.", classes: 'green'});
+                        M.toast({html: "We are overjoyed that you will be joining us on our special day! Your presence means the world to us and we can't wait to celebrate our wedding with you. Thank you for taking the time to RSVP and for sharing in our happiness. We look forward to creating unforgettable memories with you on our wedding day.", classes: 'green', displayLength: 6000,});
                         $("#pre-loader").hide()
                         $('#content').removeClass('less-opacity');
                         $('#name').val("");
@@ -337,7 +341,7 @@
                         $('#cancel')[0].click()
                     },
                     200:function() {
-                        M.toast({html: "Oops! Something went wrong. Please try again", classes: 'red'});
+                        M.toast({html: "Oops! Something went wrong. Please try again", classes: 'red', displayLength: 6000,});
                         $("#pre-loader").hide()
                         $('#content').removeClass('less-opacity');
                     }

@@ -41,9 +41,9 @@
               <p class="mt-50">
                 KZ PRIVATE RESORT
                 <br/>
-                C. LAWIS EXTENSION BRGY SAN LUIS, ANTIPOLO CIT, 1870
+                C. LAWIS EXTENSION BRGY SAN LUIS, ANTIPOLO CITY, 1870
               </p>
-              <div style="">
+              <div >
                 <a id="download-button" class="btn waves-effect waves-light btn modal-trigger red darken-4 baskervville-regular" style="letter-spacing:5px;font-weight:500" href="#modal1">RSVP</a>
               </div>
             </div>
@@ -75,10 +75,10 @@
             <p class="light">
               KZ Private Resort
               <br/>
-              C. LAWIS EXTENSION BRGY SAN LUIS, ANTIPOLO CIT, 1870
+              C. LAWIS EXTENSION BRGY SAN LUIS, ANTIPOLO CITY, 1870
               <br/>
               <br/>
-              <span style="font-style:italic">Please note that parking is reserved for immediate family, but you can park at the pay parking are nearby.</span>
+              <span style="font-style:italic">Please note that parking is reserved for immediate family, but you can park at the pay parking nearby.</span>
               <br/>
               <br/>
               <a target="_blank" href="https://www.google.com/maps/place/KZ+Private+Pool+Resort/@14.5976544,121.1938868,17z/data=!3m1!4b1!4m6!3m5!1s0x3397bf6702859285:0x836e0a453b554dcc!8m2!3d14.5976492!4d121.1964617!16s%2Fg%2F11pwv0_2k9?entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D">Get Directions</a>
@@ -98,7 +98,7 @@
           <div class="icon-block">
             <h3 class="center corinthia-regular">RSVP on our Wedding</h3>
             <p class="light">
-              We can't wait to celebrate with you and your presence is important to us! We reserved 2 seat for you. The favor of your response is requested on or before November 20, 2024
+              We can't wait to celebrate with you and your presence is important to us! We reserved seat/s for you. The favor of your response is requested on or before November 20, 2024
             </p>
             <!-- rsvp 2 -->
             <form id="rsvp2">
@@ -125,20 +125,37 @@
                 </div>
                 <div id="guest_option_2" style="display:none;">
                     <label>
-                        <input name="group2_2" type="radio" value="1">
-                        <span>Attending with a guest</span>
+                      <input name="group2_2" type="radio" checked="" value="0">
+                      <span>Attending alone</span>
                     </label>
                     <label>
-                        <input name="group2_2" type="radio" checked="" value="0">
-                        <span>Attending alone</span>
+                        <input name="group2_2" type="radio" value="1">
+                        <span>Attending with a guest</span>
                     </label>
                     <br>
                     <br>
                     <div id="guest_2" style="display:none;" class="input-field">
-                        <input type="text" placeholder="Input your guest first name and last name" id="guest_name_2" name="entry.1837546959" class="validate">
-                        <label for="guest_name_2">Guest Name</label>
+                        <p class="light">Please be advised that seating is limited, and we have reserved a certain number of seats for you and for your guests. Kindly indicate their names on the space provided below.</p>
                         <br>
-                        <span class="light">We sincerely apologize for any disappointment by only allowing one seat for your guest in our wedding RSVP.</span>
+                        <select name="guest_count_2" id="guest_count_2">
+                          <option value="" disabled selected>Select number of your guest</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                        </select>
+                        <div class="row light">
+                          <div class="input-field col s12">
+                            <textarea id="guest_name_2" class="materialize-textarea" name="entry.1837546959" id="guest_name_2"></textarea>
+                            <label for="guest_name_2">Please indicate names of additional guest/s.</label>
+                          </div>
+                        </div>
                     </div>
                 </div>
                 <div style="text-align: right;">
@@ -199,7 +216,9 @@
           </div>
           <div class="icon-block">
             <h3 class="center corinthia-regular ">In Lieu of Gifts</h3>
-            <p class="light">With all that we have, we've been truly blessed. Your presence and prayers are all that we request. If you desire to give nonetheless, monetary gift is the one we suggest.</p>
+            <p class="light">
+              To save you from shopping, sit back and rest. As your presence and prayers are all that we request. If you desire to give nonetheless to help us on our way, a gift of cash towards our home would really make our day. A money envelope with our Account's QR code can be found on your table. However, if you'll prefer a gift, please feel free to surprise us in your own special way.Don't go overboard or rob any banks! Any little thing will make us smile with thanks.
+            </p>
           </div>
         </div>
       </div>
@@ -241,7 +260,7 @@
     <div id="modal1" class="modal bottom-sheet details">
         <div class="modal-content" style="color:#000">
             <h3 class="corinthia-regular center">RSVP for our Wedding</h3>
-            <p class="center light">We can't wait to celebrate with you and your presence is important to us! We reserved 2 seat for you. The favor of your response is requested on or before November 20, 2024.
+            <p class="center light">We can't wait to celebrate with you and your presence is important to us! We reserved seat/s for you. The favor of your response is requested on or before November 20, 2024.
             </p>
             <div class="mt-20">
                 <div>
@@ -276,10 +295,24 @@
                     <br>
                     <br>
                     <div id="guest" style="display:none;" class="input-field">
-                        <input type="text" placeholder="Input your guest first name and last name" id="guest_name" name="entry.1837546959" class="validate">
-                        <label for="guest_name">Guest Name</label>
-                        <br>
-                        <span class="light">We sincerely apologize for any disappointment by only allowing one seat for your guest in our wedding RSVP.</span>
+                      <p class="light">Please be advised that seating is limited, and we have reserved a certain number of seats for you and for your guests. Kindly indicate their names on the space provided below.</p>
+                      <select name="guest_count" id="guest_count">
+                        <option value="" disabled selected>Select number of your guest</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                      </select>
+                      <div class="input-field col s12">
+                        <textarea id="guest_name" class="materialize-textarea" name="entry.1837546959" id="guest_name"></textarea>
+                        <label for="guest_name">Please indicate names of additional guest/s.</label>
+                      </div>
                     </div>
                 </div>
             </div>
@@ -302,16 +335,8 @@
   <!-- custom scripts -->
   <script>
     $('input[name="group1"]').change(function(){
-        if($(this).val()=="Accept"){
+        if($('input[name="group1"]:checked').val()=="Accept"){
             $('#guest_option').show();
-        } else {
-            $('#guest_option').hide();
-        }
-    });
-
-    $('input[name="group1_2"]').change(function(){
-        if($(this).val()=="Accept"){
-            $('#guest_option_2').show();
         } else {
             $('#guest_option').hide();
         }
@@ -326,17 +351,31 @@
     });
 
 
-    $('input[name="group2_2"]').change(function(){
-        if($(this).val()=="1"){
-            $('#guest_2').show();
+    $('input[name="group1_2"]').change(function(){
+        if($('input[name="group1_2"]:checked').val()=="Accept"){
+            $('#guest_option_2').show();
         } else {
-            $('#guest').hide();
+            $('#guest_option_2').hide();
         }
     });
+
+
+    $('input[name="group2_2"]').change(function(){
+        var response = $('input[name="group1_2"]:checked').val();
+        if($(this).val()=="1"){
+          if(response =="Accept") {
+            $('#guest_2').show();
+          }
+        } else {
+            $('#guest_2').hide();
+        }
+    });
+
     
 
 
     $(document).ready(function () {
+        $('select').formSelect({classes:"light"});
         $('#guest_option').show();
         $('#guest_option_2').show();
 
@@ -361,6 +400,7 @@
             var name = $('#name').val();
             var contact_num = $('#contact_num').val();
             var answer = $('input[name="group1"]:checked').val();
+            var guest_count_2 = $('#guest_count').val();
             var guest_name = $('#guest_name').val();
 
             $.ajax({
@@ -371,19 +411,20 @@
                     "entry.434473921": name,
                     "entry.801260926": contact_num,
                     "entry.65944095": answer,
-                    "entry.1526892177": guest_name,
+                    "entry.1526892177": guest_count_2,
+                    "entry.1910182747": guest_name,
                 },
                 dataType: 'xml',
                 statusCode: {
                     0:function() {
-                        M.toast({html: "We are overjoyed that you will be joining us on our special day! Your presence means the world to us and we can't wait to celebrate our wedding with you. Thank you for taking the time to RSVP and for sharing in our happiness. We look forward to creating unforgettable memories with you on our wedding day.", classes: 'green'});
+                        M.toast({html: "We are overjoyed that you will be joining us on our special day! Your presence means the world to us and we can't wait to celebrate our wedding with you. Thank you for taking the time to RSVP and for sharing in our happiness. We look forward to creating unforgettable memories with you on our wedding day.", classes: 'green', displayLength: 12000,});
                         $('#name').val("");
                         $('#contact_num').val("");
                         $('#guest_name').val("");
                         $('#cancel')[0].click()
                     },
                     200:function() {
-                        M.toast({html: "Oops! Something went wrong. Please try again", classes: 'red'});
+                        M.toast({html: "Oops! Something went wrong. Please try again", classes: 'red', displayLength: 6000,});
                     }
                 }
                
@@ -402,6 +443,7 @@
             var name = $('#name_2').val();
             var contact_num = $('#contact_num_2').val();
             var answer = $('input[name="group1_2"]:checked').val();
+            var guest_count_2 = $('#guest_count_2').val();
             var guest_name = $('#guest_name_2').val();
 
             $.ajax({
@@ -412,19 +454,20 @@
                     "entry.434473921": name,
                     "entry.801260926": contact_num,
                     "entry.65944095": answer,
-                    "entry.1526892177": guest_name,
+                    "entry.1526892177": guest_count_2,
+                    "entry.1910182747": guest_name,
                 },
                 dataType: 'xml',
                 statusCode: {
                     0:function() {
-                        M.toast({html: "We are overjoyed that you will be joining us on our special day! Your presence means the world to us and we can't wait to celebrate our wedding with you. Thank you for taking the time to RSVP and for sharing in our happiness. We look forward to creating unforgettable memories with you on our wedding day.", classes: 'green'});
+                        M.toast({html: "We are overjoyed that you will be joining us on our special day! Your presence means the world to us and we can't wait to celebrate our wedding with you. Thank you for taking the time to RSVP and for sharing in our happiness. We look forward to creating unforgettable memories with you on our wedding day.", classes: 'green', displayLength: 6000,});
                         $('#name').val("");
                         $('#contact_num').val("");
                         $('#guest_name').val("");
                         $('#cancel')[0].click()
                     },
                     200:function() {
-                        M.toast({html: "Oops! Something went wrong. Please try again", classes: 'red'});
+                        M.toast({html: "Oops! Something went wrong. Please try again", classes: 'red', displayLength: 6000,});
                     }
                 }
                
